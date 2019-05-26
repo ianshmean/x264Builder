@@ -31,5 +31,5 @@ deploy:
   file: products/*
   skip_cleanup: true
   on:
-    repo: JuliaIO/x264Builder
+    repo: ianshmean/x264Builder
     branch: master
