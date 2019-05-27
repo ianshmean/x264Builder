@@ -1,5 +1,4 @@
 language: julia
-dist: trusty
 os:
 - linux
 julia:
@@ -27,10 +26,10 @@ script:
 deploy:
   provider: releases
   api-key:
-    secure: m44mc0i3WdIRcoOH2o4P2FbaAEAytlrARTWkoKJNTpdVuMUpWKh/uI0vTZryHRsZStMl0iotBe1wO0W02iuZcMXG0cl0hF0oHZj20L6iW6r6FFzu4XViJc8pZvqUlsi2Pqnulz/8lWej7ytC3dBpjSrhxvbm4cfwxdKGvXVfCsXdUnYZK/lkwA2i4nDo+K+T/cBc85Efu7Ug42R8Zr8/RJHkER7mzBWCROUZrScGangRrLsFZAY/kQjsqo8PUAmmFDLshVQ90tGTIISaPWCy2O9/CwL8TVjTS4cYACnj+sAmy2nf9TgD810MIQEo4puD+MrwSDnvxrRaXMRlzQQ+fhSBqXJIaH4juryFkzExVGL4nBSmFuM1tkVs9XTraQRNJERvuXydSpxHNjIN+eiMUWbJ7jd0LgfvqSi3dL7BD2aFkW4fY8pGfCZuUiDMMQhpCyhkRa9/Uc5XTfdKMiEeVGzCzotO9pwK7gwxQRpnGLKfXtVuFn8BJUno0SpX4cvm9fLZwpR1xAHbOSQCLVgAmKJFUvAKWgy7UxKgJ06+yZ2Q9TyKh6QIffgW9gJxJG7lhBrA5AcvdrGxHAnYq+z6wiftOEy7cnUOJPvZXRSr2zUd/74NU53WPrEnHe3OnRu0ianmj4zc+zku6ttxTmuMsHQDQ5EvigN+bQSVOQHWt/8=
+    secure: 3+WTxxP8MpwNC1zgcsYHOO7ZQX269MqCVeA/iYCPTvVt62Oczd2UyFMZGQPvX+ujlKwCooYivs7jAn1hP7FJNTF2XdVV1RB7G2J0FQhNlUJlXORdzpOYg5CNycVvoRh76dDuEtKMkMWIygveYOYt0ZGgMziQ9YbfIGnAY5i1DEPCxod6u4rO7E+/0XA7/W1FrsWX/r47FA51hpiq5jcHly4Lr8o5xhoYbRealn5sDEHGG+wFgBWoymLEGe9n4aID4GXfmVXFJJQDPkr7BOxurBGFts5wKdkqFc4PUIReCveoMJICETyIrtf0p1kIe4rURcU9fdVYvBOMWBjPdqQOIEailK2aAqihutZg6J9p2b+mXNUSg1PzxjfQKEjnXuHHp7088tbhaMVM8MJq73MkpQjqoQhqmrwAWstgYXtFslrYMZwwa5uyMJaloNob/pSb1Hs66cdLFybjp+A/AXbXPN8ouKU/hfkyigdBnxHe2zeB3WGKhyNLLA0evCvXC7vTBS2W+ruY8mUEkk8SNRFeOo/915Lgc3QaaLqXsJtsrqDmKd9WuZj/W9FbU+c+heu0blZVR0uX28vGqovJbBLjFctz+ChUWe2bdmKMnncCcJgjNcXRAKCKqFwhg78rTMD02ueZr3ndpnrLGsT2ynIsVS70gvkrOqfv5xs/Owjsxu4=
   file_glob: true
   file: products/*
   skip_cleanup: true
   on:
-    repo: JuliaIO/x264Builder
-    branch: master
+    repo: ianshmean/x264Builder
+    branch: release
