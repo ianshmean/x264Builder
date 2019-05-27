@@ -16,6 +16,9 @@ sources = [
 script = raw"""
 cd $WORKSPACE/srcdir
 cd x264-snapshot-20190525-2245-stable/
+for file in config.guess configu.sub; do
+    wget -O "$file" "http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=$file;hb=HEAD"
+done
 ./configure --prefix=$prefix --host=$target --enable-shared --disable-cli
 make -j${nproc}
 make install
